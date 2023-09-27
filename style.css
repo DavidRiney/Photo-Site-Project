@@ -1,0 +1,35 @@
+/* Importing a Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+  body{
+    background-color: #eee;
+  }
+
+  h1{
+    font-family: 'Ubuntu', sans-serif;
+    /* h1 elements are bold by default so font weight is not needed */
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 5px solid #ccc;
+    padding-bottom: 10px;
+    width: 48.33%;
+    margin: 20px auto;
+  }
+
+  img {
+    /* Setting the width on the images to 100% so they will shrink down to only take up the space assigned to them in the CSS grid below */
+    width: 100%;
+  }
+
+  #main {
+    display: grid;
+
+    grid-template-columns: repeat(4, 22.5%);
+
+    column-gap: 3.33%;
+
+    row-gap: 6.66%;
+  }
